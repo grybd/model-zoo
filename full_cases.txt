@@ -100,3 +100,4 @@ vision/visual-counting/S-DCNet
 vision/classification/SwinTransformer
 vision/detection/lprnet
 vision/recognition/tsm
+vision/classification/big_transfer_mlir
