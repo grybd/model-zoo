@@ -56,6 +56,8 @@ python3 .github/workflows/check.py
 |CenterNet                        |[vision/detection/CenterNet-Torch](vision/detection/CenterNet-Torch)                                  |:white\_check\_mark:|                    |
 |CRNN                             |[vision/OCR/CRNN](vision/OCR/CRNN)                                                                    |:white\_check\_mark:|                    |
 |cyclegan\_horse2zebra            |[vision/GAN/cyclegan](vision/GAN/cyclegan)                                                            |:white\_check\_mark:|                    |
+|DBNet\_totaltext\_res18\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|                    |
+|DBNet\_totaltext\_res50\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|                    |
 |deeplabv3p                       |[vision/segmentation/deeplabv3p](vision/segmentation/deeplabv3p)                                      |:white\_check\_mark:|:white\_check\_mark:|
 |densenet                         |[vision/classification/DenseNet-Caffe](vision/classification/DenseNet-Caffe)                          |:white\_check\_mark:|                    |
 |dpn68                            |[vision/classification/dpn68](vision/classification/dpn68)                                            |:white\_check\_mark:|:white\_check\_mark:|
@@ -81,7 +83,7 @@ python3 .github/workflows/check.py
 |lenet                            |[vision/classification/LeNet](vision/classification/LeNet)                                            |:white\_check\_mark:|                    |
 |lprnet                           |[vision/detection/lprnet](vision/detection/lprnet)                                                    |                    |:white\_check\_mark:|
 |market\_bot\_R50                 |[vision/reid/market\_bot\_R50](vision/reid/market_bot_R50)                                            |:white\_check\_mark:|:white\_check\_mark:|
-|MDNet                            |[vision/tracking/MDNet-Torch](vision/tracking/MDNet-Torch)                                            |:white\_check\_mark:|                    |
+|MDNet                            |[vision/tracking/MDNet-Torch](vision/tracking/MDNet-Torch)                                            |:white\_check\_mark:|:white\_check\_mark:|
 |mm\_resnet50                     |[vision/classification/mm\_resnet50](vision/classification/mm_resnet50)                               |                    |:white\_check\_mark:|
 |mobilenet-v2                     |[vision/classification/mobilenet-v2](vision/classification/mobilenet-v2)                              |                    |:white\_check\_mark:|
 |mobilenet\_v1                    |[vision/classification/MobileNet-Caffe-v1](vision/classification/MobileNet-Caffe-v1)                  |:white\_check\_mark:|                    |
