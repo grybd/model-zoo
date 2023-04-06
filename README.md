@@ -53,6 +53,7 @@ python3 .github/workflows/check.py
 |arcface                          |[vision/recognition/arcface](vision/recognition/arcface)                                              |                    |:white\_check\_mark:|
 |c3d                              |[vision/video-recognition/C3D](vision/video-recognition/C3D)                                          |:white\_check\_mark:|                    |
 |CenterNet                        |[vision/detection/CenterNet-Torch](vision/detection/CenterNet-Torch)                                  |:white\_check\_mark:|                    |
+|clip                             |[vision/classification/clip-mlir](vision/classification/clip-mlir)                                    |                    |:white\_check\_mark:|
 |CRNN                             |[vision/OCR/CRNN](vision/OCR/CRNN)                                                                    |:white\_check\_mark:|                    |
 |cyclegan\_horse2zebra            |[vision/GAN/cyclegan](vision/GAN/cyclegan)                                                            |:white\_check\_mark:|                    |
 |DBNet\_totaltext\_res18\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|                    |
