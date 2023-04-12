@@ -74,6 +74,7 @@ python3 .github/workflows/check.py
 |facenet                          |[vision/recognition/facenet](vision/recognition/facenet)                                              |:white\_check\_mark:|                    |
 |GOTURN                           |[vision/tracking/GOTURN-Caffe](vision/tracking/GOTURN-Caffe)                                          |:white\_check\_mark:|                    |
 |HRNet                            |[vision/classification/HRNet-Torch](vision/classification/HRNet-Torch)                                |:white\_check\_mark:|                    |
+|huggingface-resnet50             |[vision/classification/resnet50-v1.5](vision/classification/resnet50-v1.5)                            |:white\_check\_mark:|                    |
 |inception\_resnet\_v2            |[vision/classification/inception\_resnet\_v2](vision/classification/inception_resnet_v2)              |:white\_check\_mark:|                    |
 |inception\_v1                    |[vision/classification/inception\_v1](vision/classification/inception_v1)                             |:white\_check\_mark:|                    |
 |inception\_v3                    |[vision/classification/inception\_v3](vision/classification/inception_v3)                             |:white\_check\_mark:|                    |
@@ -181,8 +182,7 @@ python3 .github/workflows/check.py
 |bert\_large\_transformers-4.23.0|[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
 |bert\_paddle                    |[language/nlp/bert\_paddle](language/nlp/bert_paddle)                         |:white\_check\_mark:|                    |
 |ConformerEncoder                |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
-|GRU                             |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|                    |
-|language\_nlp\_GRU\_mlir        |[language/nlp/GRU](language/nlp/GRU)                                          |                    |:white\_check\_mark:|
+|GRU                             |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|:white\_check\_mark:|
 |mobilebert-tflite               |[language/nlp/mobilebert\_tflite](language/nlp/mobilebert_tflite)             |                    |:white\_check\_mark:|
 |opus-mt-zh-en-decoder           |[language/translate/opus-mt-zh-en](language/translate/opus-mt-zh-en)          |:white\_check\_mark:|                    |
 |opus-mt-zh-en-encoder           |[language/translate/opus-mt-zh-en](language/translate/opus-mt-zh-en)          |:white\_check\_mark:|                    |
