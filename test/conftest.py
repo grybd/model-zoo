@@ -245,7 +245,7 @@ def nntc_docker(latest_tpu_perf_whl):
     yield dict(docker=client, container=nntc_container)
 
     # Chown so we can delete them later
-    dirs_to_remove = ['*.tar', '*out*', 'data']
+    dirs_to_remove = ['*.tar', '*out*', 'data', '.tar.gz']
     nntc_container.exec_run(
         f'bash -c "chown -R {os.getuid()} {" ".join(dirs_to_remove)}"',
         tty=True)
@@ -332,7 +332,7 @@ def mlir_docker(latest_tpu_perf_whl):
     write_github_output('MLIR_MODEL_TAR', model_tar)
 
     # Chown so we can delete them later
-    dirs_to_remove = ['*.tar', '*out*', 'data', '*list.txt']
+    dirs_to_remove = ['*.tar', '*out*', 'data', '*list.txt', '.tar.gz']
     mlir_container.exec_run(
         f'bash -c "chown -R {os.getuid()} {" ".join(dirs_to_remove)}"',
         tty=True)
@@ -497,14 +497,27 @@ def upload_bmodel(target, model_tar, T):
         f'bash -c "tar -T {T} -cO | curl -s --fail {dst} -T - > /dev/null"',
         shell=True, check=True)
 
+def package_csv(target, model_tar):
+    import platform
+    arch = platform.machine()
+
+    fn = f'csv_{target}_ARM64_{model_tar}.gz' if arch == 'aarch64' else f'csv_{target}_X64_{model_tar}.gz'
+    subprocess.run(
+        f'bash -c "tar -T <(find ./ -name "*.csv") -cvf {fn}"',
+        shell=True, check=True)
+
 @pytest.fixture(scope='session')
 def runtime_dependencies(latest_tpu_perf_whl):
+    execute_cmd(f'pip3 install {latest_tpu_perf_whl} > /dev/null')
+
+@pytest.fixture(scope='session')
+def precision_dependencies(latest_tpu_perf_whl):
     execute_cmd(f'pip3 install {latest_tpu_perf_whl} > /dev/null')
     execute_cmd('pip3 install -r requirements.txt -i https://mirrors.cloud.tencent.com/pypi/simple > /dev/null')
 
 @pytest.fixture(scope='session')
-def mlir_runtime(runtime_dependencies, target, case_list):
-    dirs_to_remove = ['*.tar', '*out*', 'data']
+def mlir_runtime(target, case_list):
+    dirs_to_remove = ['*.tar', '*out*', 'data', '.tar.gz']
     for d in dirs_to_remove:
         remove_tree(d)
 
@@ -516,14 +529,15 @@ def mlir_runtime(runtime_dependencies, target, case_list):
     yield dict(case_list=case_list)
 
     check_output_csv()
+    package_csv(target, model_tar)
 
     # Cleanup
     for d in dirs_to_remove:
         remove_tree(d)
 
 @pytest.fixture(scope='session')
-def nntc_runtime(runtime_dependencies, target, case_list):
-    dirs_to_remove = ['*.tar', '*out*', 'data']
+def nntc_runtime(target, case_list):
+    dirs_to_remove = ['*.tar', '*out*', 'data', '.tar.gz']
     for d in dirs_to_remove:
         remove_tree(d)
 
@@ -535,6 +549,7 @@ def nntc_runtime(runtime_dependencies, target, case_list):
     yield dict(case_list=case_list)
 
     check_output_csv()
+    package_csv(target, model_tar)
 
     # Cleanup
     for d in dirs_to_remove:

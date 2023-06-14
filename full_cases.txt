@@ -42,6 +42,7 @@ vision/detection/pointpillars
 vision/detection/ppyolo
 vision/detection/ppyoloe
 vision/detection/scrfd
+vision/detection/ultraface
 vision/detection/yoloface
 vision/segmentation/pp_humansegv1_lite
 vision/classification/shufflenet_v2
@@ -113,3 +114,8 @@ vision/segmentation/BiSeNet
 vision/segmentation/SegFormer
 language/generative/gpt2
 vision/generative/stable_diffusion
+vision/detection/yolov8
+vision/detection/dbnet
+language/nlp/ernie-3.0-medium-zh
+vision/classification/ResNeXt50-v1
+vision/classification/ResNeXt50-v2

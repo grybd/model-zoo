@@ -8,6 +8,7 @@ runtime_cmp: false
 model: $(home)/ch_ppocr_mobile_v2.0_cls_infer/
 
 fp_batch_sizes: [1, 4, 8, 16]
+runtime_cmp: false
 
 BM1684X:
   fp_loops:

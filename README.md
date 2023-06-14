@@ -58,8 +58,9 @@ python3 .github/workflows/check.py
 |clip                             |[vision/classification/clip-mlir](vision/classification/clip-mlir)                                    |                    |:white\_check\_mark:|
 |CRNN                             |[vision/OCR/CRNN](vision/OCR/CRNN)                                                                    |:white\_check\_mark:|                    |
 |cyclegan\_horse2zebra            |[vision/GAN/cyclegan](vision/GAN/cyclegan)                                                            |:white\_check\_mark:|                    |
-|DBNet\_totaltext\_res18\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|                    |
-|DBNet\_totaltext\_res50\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|                    |
+|dbnet                            |[vision/detection/dbnet](vision/detection/dbnet)                                                      |:white\_check\_mark:|:white\_check\_mark:|
+|DBNet\_totaltext\_res18\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|:white\_check\_mark:|
+|DBNet\_totaltext\_res50\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|:white\_check\_mark:|
 |deeplabv3p                       |[vision/segmentation/deeplabv3p](vision/segmentation/deeplabv3p)                                      |:white\_check\_mark:|:white\_check\_mark:|
 |densenet                         |[vision/classification/DenseNet-Caffe](vision/classification/DenseNet-Caffe)                          |:white\_check\_mark:|                    |
 |dpn68                            |[vision/classification/dpn68](vision/classification/dpn68)                                            |:white\_check\_mark:|:white\_check\_mark:|
@@ -78,7 +79,7 @@ python3 .github/workflows/check.py
 |HRNet                            |[vision/classification/HRNet-Torch](vision/classification/HRNet-Torch)                                |:white\_check\_mark:|                    |
 |huggingface-resnet50             |[vision/classification/resnet50-v1.5](vision/classification/resnet50-v1.5)                            |:white\_check\_mark:|                    |
 |inception\_resnet\_v2            |[vision/classification/inception\_resnet\_v2](vision/classification/inception_resnet_v2)              |:white\_check\_mark:|                    |
-|inception\_v1                    |[vision/classification/inception\_v1](vision/classification/inception_v1)                             |:white\_check\_mark:|                    |
+|inception\_v1                    |[vision/classification/inception\_v1](vision/classification/inception_v1)                             |:white\_check\_mark:|:white\_check\_mark:|
 |inception\_v3                    |[vision/classification/inception\_v3](vision/classification/inception_v3)                             |:white\_check\_mark:|                    |
 |inception\_v4                    |[vision/classification/inception\_v4](vision/classification/inception_v4)                             |:white\_check\_mark:|                    |
 |inception\_v4-tflite             |[vision/classification/inception\_v4](vision/classification/inception_v4)                             |                    |:white\_check\_mark:|
@@ -101,7 +102,7 @@ python3 .github/workflows/check.py
 |pointpillars                     |[vision/detection/pointpillars](vision/detection/pointpillars/)                                       |                    |:white\_check\_mark:|
 |PP-OCRv3\_det                    |[vision/OCR/OCRv3\_paddle](vision/OCR/OCRv3_paddle)                                                   |                    |:white\_check\_mark:|
 |PP-OCRv3\_rec                    |[vision/OCR/OCRv3\_paddle](vision/OCR/OCRv3_paddle)                                                   |                    |:white\_check\_mark:|
-|PP-OCRv3cls                      |[vision/OCR/PP-OCRv3cls](vision/OCR/PP-OCRv3cls)                                                      |:white\_check\_mark:|                    |
+|PP-OCRv3cls                      |[vision/OCR/PP-OCRv3cls](vision/OCR/PP-OCRv3cls)                                                      |:white\_check\_mark:|:white\_check\_mark:|
 |PP-OCRv3det                      |[vision/OCR/PP-OCRv3det](vision/OCR/PP-OCRv3det)                                                      |:white\_check\_mark:|:white\_check\_mark:|
 |PP-OCRv3rec                      |[vision/OCR/PP-OCRv3rec](vision/OCR/PP-OCRv3rec)                                                      |                    |:white\_check\_mark:|
 |pp\_humansegv1\_lite\_argmax     |[vision/segmentation/pp\_humansegv1\_lite](vision/segmentation/pp_humansegv1_lite)                    |:white\_check\_mark:|                    |
@@ -129,7 +130,11 @@ python3 .github/workflows/check.py
 |ResNet50\_vd\_infer              |[vision/classification/ResNet50\_vd\_paddle](vision/classification/ResNet50_vd_paddle)                |                    |:white\_check\_mark:|
 |resnext                          |[vision/classification/ResNeXt](vision/classification/ResNeXt)                                        |:white\_check\_mark:|                    |
 |resneXt50                        |[vision/classification/ResNeXt50](vision/classification/ResNeXt50)                                    |:white\_check\_mark:|                    |
-|retinaface                       |[vision/detection/retinaface](vision/detection/retinaface)                                            |:white\_check\_mark:|                    |
+|resneXt50-v1                     |[vision/classification/ResNeXt50-v1](vision/classification/ResNeXt50-v1)                              |                    |:white\_check\_mark:|
+|resneXt50-v2                     |[vision/classification/ResNeXt50-v2](vision/classification/ResNeXt50-v2)                              |                    |:white\_check\_mark:|
+|retinaface                       |[vision/detection/retinaface](vision/detection/retinaface)                                            |:white\_check\_mark:|:white\_check\_mark:|
+|S-DCNet_SHA_fusepost             |[vision/visual-counting/S-DCNet](vision/visual-counting/S-DCNet)                                      |                    |:white\_check\_mark:|
+|S-DCNet_SHB_fusepost             |[vision/visual-counting/S-DCNet](vision/visual-counting/S-DCNet)                                      |                    |:white\_check\_mark:|
 |scrfd                            |[vision/detection/scrfd](vision/detection/scrfd)                                                      |                    |:white\_check\_mark:|
 |SegFormer                        |[vision/segmentation/SegFormer](vision/segmentation/SegFormer)                                        |                    |:white\_check\_mark:|
 |shufflenet\_v2                   |[vision/classification/shufflenet\_v2](vision/classification/shufflenet_v2)                           |                    |:white\_check\_mark:|
@@ -148,6 +153,7 @@ python3 .github/workflows/check.py
 |tpu-mlir\_yoloface               |[vision/detection/yoloface](vision/detection/yoloface)                                                |                    |:white\_check\_mark:|
 |tsm                              |[vision/recognition/tsm](vision/recognition/tsm)                                                      |                    |:white\_check\_mark:|
 |TSN                              |[vision/video-recognition/TSN](vision/video-recognition/TSN/)                                         |                    |:white\_check\_mark:|
+|ultraface                        |[vision/detection/ultraface](vision/detection/ultraface)                                              |                    |:white\_check\_mark:|
 |ultralytics\_yolov3              |[vision/detection/ultralytics-yolov3](vision/detection/ultralytics-yolov3)                            |:white\_check\_mark:|                    |
 |unet\_plusplus                   |[vision/segmentation/unet\_plusplus](vision/segmentation/unet_plusplus)                               |:white\_check\_mark:|:white\_check\_mark:|
 |VDSR                             |[vision/super-resolution/VDSR](vision/super-resolution/VDSR)                                          |:white\_check\_mark:|                    |
@@ -175,28 +181,38 @@ python3 .github/workflows/check.py
 |yolov5m-6                        |[vision/detection/yolov5](vision/detection/yolov5)                                                    |:white\_check\_mark:|                    |
 |yolov5s                          |[vision/detection/yolov5](vision/detection/yolov5)                                                    |                    |:white\_check\_mark:|
 |yolov5s-4                        |[vision/detection/yolov5](vision/detection/yolov5)                                                    |:white\_check\_mark:|                    |
-|yolov5s-5                        |[vision/detection/yolov5](vision/detection/yolov5)                                                    |:white\_check\_mark:|                    |
+|yolov5s-5                        |[vision/detection/yolov5](vision/detection/yolov5)                                                    |:white\_check\_mark:|:white\_check\_mark:|
 |yolov5s-tflite                   |[vision/detection/yolov5](vision/detection/yolov5)                                                    |                    |:white\_check\_mark:|
 |yolov5x                          |[vision/detection/yolov5](vision/detection/yolov5)                                                    |                    |:white\_check\_mark:|
 |yolov5x-5                        |[vision/detection/yolov5](vision/detection/yolov5)                                                    |:white\_check\_mark:|                    |
+|yolov8l                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
+|yolov8m                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
+|yolov8n                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
+|yolov8s                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
+|yolov8x                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
 |yolox\_s\_300e\_coco             |[vision/detection/ppyolox](vision/detection/ppyolox)                                                  |                    |:white\_check\_mark:|
 
 ### Language
 
-|Model                           |Path                                                                          |NNTC                |MLIR                |
-|:-                              |:-                                                                            |:-                  |:-                  |
-|bert                            |[language/nlp/bert](language/nlp/bert)                                        |:white\_check\_mark:|                    |
-|bert\_base\_transformers-2.11.0 |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
-|bert\_base\_transformers-4.23.0 |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
-|bert\_large\_transformers-2.11.0|[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
-|bert\_large\_transformers-4.23.0|[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
-|bert\_paddle                    |[language/nlp/bert\_paddle](language/nlp/bert_paddle)                         |:white\_check\_mark:|                    |
-|ConformerEncoder                |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
-|gpt2                            |[language/generative/gpt2](language/generative/gpt2)                          |:white\_check\_mark:|                    |
-|GRU                             |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|:white\_check\_mark:|
-|mobilebert-tflite               |[language/nlp/mobilebert\_tflite](language/nlp/mobilebert_tflite)             |                    |:white\_check\_mark:|
-|ScoringIds                      |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
-|TransformerDecoder              |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
-|TransformerLM                   |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
-|WenetDecoder                    |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|                    |
-|WenetEncoder                    |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|                    |
+|Model                             |Path                                                                          |NNTC                |MLIR                |
+|:-                                |:-                                                                            |:-                  |:-                  |
+|bert                              |[language/nlp/bert](language/nlp/bert)                                        |:white\_check\_mark:|                    |
+|bert\_base\_squad\_uncased-2.11.0 |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|                    |:white\_check\_mark:|
+|bert\_base\_squad\_uncased-4.23.0 |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|                    |:white\_check\_mark:|
+|bert\_base\_transformers-2.11.0   |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
+|bert\_base\_transformers-4.23.0   |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
+|bert\_large\_transformers-2.11.0  |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
+|bert\_large\_transformers-4.23.0  |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
+|bert\_paddle                      |[language/nlp/bert\_paddle](language/nlp/bert_paddle)                         |:white\_check\_mark:|                    |
+|ConformerEncoder                  |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
+|ernie-3.0-medium-zh               |[language/nlp/ernie-3.0-medium-zh](language/nlp/ernie-3.0-medium-zh)          |                    |:white\_check\_mark:|
+|gpt2                              |[language/generative/gpt2](language/generative/gpt2)                          |:white\_check\_mark:|                    |
+|GRU                               |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|:white\_check\_mark:|
+|mobilebert-tflite                 |[language/nlp/mobilebert\_tflite](language/nlp/mobilebert_tflite)             |                    |:white\_check\_mark:|
+|ScoringIds                        |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
+|TransformerDecoder                |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
+|TransformerLM                     |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
+|WenetDecoder                      |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|                    |
+|WenetEncoder                      |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|                    |
+|WenetSpeechDecoder                      |[language/asr/wenet](language/asr/wenet)                                |                    |:white\_check\_mark:|
+|WenetSpeechNonStreamingEncoder          |[language/asr/wenet](language/asr/wenet)                                |                    |:white\_check\_mark:|
