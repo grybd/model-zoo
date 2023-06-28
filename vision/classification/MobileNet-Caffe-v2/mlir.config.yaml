@@ -65,7 +65,7 @@ BM1684:
     args:
       - name: FP32
         bmodel: $(workdir)/$(name)_$(target)_f32.bmodel
-      - name: INT8
+      - name: INT8-sym
         bmodel: $(workdir)/$(name)_$(target)_int8_sym.bmodel
 
 BM1684X:
@@ -100,9 +100,9 @@ BM1684X:
     args:
       - name: FP32
         bmodel: $(workdir)/$(name)_$(target)_f32.bmodel
-      - name: INT8_SYM
+      - name: INT8-sym
         bmodel: $(workdir)/$(name)_$(target)_int8_sym.bmodel
-      - name: INT8_ASYM
+      - name: INT8-asym
         bmodel: $(workdir)/$(name)_$(target)_int8_asym.bmodel
       - name: FP16
         bmodel: $(workdir)/$(name)_$(target)_f16.bmodel

@@ -97,7 +97,7 @@ BM1684X:
         bmodel: $(workdir)/1b.fp32.compilation/compilation.bmodel
       - name: FP16
         bmodel: $(workdir)/1b.fp16.compilation/compilation.bmodel
-      - name: INT8
+      - name: INT8-sym
         bmodel: $(workdir)/1b.compilation/compilation.bmodel
 
 val_file: $(root)/dataset/SQuAD/val/dev-v1.1.json
