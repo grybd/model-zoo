@@ -50,7 +50,7 @@ BM1684:
     args:
       - name: FP32
         bmodel: $(workdir)/$(name)_bm1684_f32.bmodel
-      - name: INT8
+      - name: INT8-sym
         bmodel: $(workdir)/$(name)_bm1684_int8_sym.bmodel
 
 dataset:
@@ -88,5 +88,5 @@ BM1684X:
         bmodel: $(workdir)/$(name)_bm1684x_f32.bmodel
       - name: FP16
         bmodel: $(workdir)/$(name)_bm1684x_f16.bmodel
-      - name: INT8
+      - name: INT8-sym
         bmodel: $(workdir)/$(name)_bm1684x_int8_sym.bmodel

@@ -69,7 +69,7 @@ BM1684X:
       - name: BF16
         bmodel: $(workdir)/$(name)_$(target)_BF16.bmodel
         model_type: "onnx"
-      - name: INT8
+      - name: INT8-sym
         bmodel: $(workdir)/$(name)_$(target)_int8_sym.bmodel
         model_type: "onnx"
 
