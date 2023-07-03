@@ -57,7 +57,7 @@ python3 .github/workflows/check.py
 |CenterNet                        |[vision/detection/CenterNet-Torch](vision/detection/CenterNet-Torch)                                  |:white\_check\_mark:|                    |
 |clip                             |[vision/classification/clip-mlir](vision/classification/clip-mlir)                                    |                    |:white\_check\_mark:|
 |CRNN                             |[vision/OCR/CRNN](vision/OCR/CRNN)                                                                    |:white\_check\_mark:|                    |
-|cyclegan\_horse2zebra            |[vision/GAN/cyclegan](vision/GAN/cyclegan)                                                            |:white\_check\_mark:|                    |
+|cyclegan\_horse2zebra            |[vision/GAN/cyclegan](vision/GAN/cyclegan)                                                            |:white\_check\_mark:|:white\_check\_mark:|
 |dbnet                            |[vision/detection/dbnet](vision/detection/dbnet)                                                      |:white\_check\_mark:|:white\_check\_mark:|
 |DBNet\_totaltext\_res18\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|:white\_check\_mark:|
 |DBNet\_totaltext\_res50\_dcn     |[vision/OCR/DBNet](vision/OCR/DBNet)                                                                  |:white\_check\_mark:|:white\_check\_mark:|
@@ -84,6 +84,7 @@ python3 .github/workflows/check.py
 |inception\_v4                    |[vision/classification/inception\_v4](vision/classification/inception_v4)                             |:white\_check\_mark:|                    |
 |inception\_v4-tflite             |[vision/classification/inception\_v4](vision/classification/inception_v4)                             |                    |:white\_check\_mark:|
 |inceptionBN21k                   |[vision/classification/InceptionBN-21k-for-Caffe](vision/classification/InceptionBN-21k-for-Caffe)    |:white\_check\_mark:|                    |
+|kapao                            |[vision/pose-estimation/kapao](vision/pose-estimation/kapao)                                          |                    |:white\_check\_mark:|
 |lenet                            |[vision/classification/LeNet](vision/classification/LeNet)                                            |:white\_check\_mark:|                    |
 |lprnet                           |[vision/detection/lprnet](vision/detection/lprnet)                                                    |                    |:white\_check\_mark:|
 |market\_bot\_R50                 |[vision/reid/market\_bot\_R50](vision/reid/market_bot_R50)                                            |:white\_check\_mark:|:white\_check\_mark:|
@@ -118,8 +119,8 @@ python3 .github/workflows/check.py
 |py-R-FCN                         |[vision/detection/py-R-FCN](vision/detection/py-R-FCN)                                                |:white\_check\_mark:|                    |
 |res2net101\_26w\_4s              |[vision/classification/res2net101\_26w\_4s](vision/classification/res2net101_26w_4s)                  |:white\_check\_mark:|:white\_check\_mark:|
 |res2net50\_26w\_4s               |[vision/classification/res2net50\_26w\_4s](vision/classification/res2net50_26w_4s)                    |:white\_check\_mark:|:white\_check\_mark:|
-|resnet101-v1-7                   |[vision/classification/resnet101-v1-7](vision/classification/resnet101-v1-7)                          |                    |:white\_check\_mark:|
-|resnet152-v1-7                   |[vision/classification/resnet152-v1-7](vision/classification/resnet152-v1-7)                          |                    |:white\_check\_mark:|
+|resnet101-v1-7                   |[vision/classification/resnet101-v1-7](vision/classification/resnet101-v1-7)                          |:white\_check\_mark:|:white\_check\_mark:|
+|resnet152-v1-7                   |[vision/classification/resnet152-v1-7](vision/classification/resnet152-v1-7)                          |:white\_check\_mark:|:white\_check\_mark:|
 |resnet18-v1-7                    |[vision/classification/resnet18-v1-7](vision/classification/resnet18-v1-7)                            |:white\_check\_mark:|:white\_check\_mark:|
 |resnet18-v2                      |[vision/classification/resnet18-v2](vision/classification/resnet18-v2)                                |                    |:white\_check\_mark:|
 |resnet34                         |[vision/classification/ResNet34](vision/classification/ResNet34)                                      |:white\_check\_mark:|                    |
@@ -185,6 +186,13 @@ python3 .github/workflows/check.py
 |yolov5s-tflite                   |[vision/detection/yolov5](vision/detection/yolov5)                                                    |                    |:white\_check\_mark:|
 |yolov5x                          |[vision/detection/yolov5](vision/detection/yolov5)                                                    |                    |:white\_check\_mark:|
 |yolov5x-5                        |[vision/detection/yolov5](vision/detection/yolov5)                                                    |:white\_check\_mark:|                    |
+|yolov7                           |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
+|yolov7-d6                        |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
+|yolov7-e6                        |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
+|yolov7-e6e                       |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
+|yolov7-tiny                      |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
+|yolov7-w6                        |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
+|yolov7x                          |[vision/detection/yolov7](vision/detection/yolov7)                                                    |                    |:white\_check\_mark:|
 |yolov8l                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
 |yolov8m                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
 |yolov8n                          |[vision/detection/yolov8](vision/detection/yolov8)                                                    |                    |:white\_check\_mark:|
@@ -208,6 +216,7 @@ python3 .github/workflows/check.py
 |ernie-3.0-medium-zh               |[language/nlp/ernie-3.0-medium-zh](language/nlp/ernie-3.0-medium-zh)          |                    |:white\_check\_mark:|
 |gpt2                              |[language/generative/gpt2](language/generative/gpt2)                          |:white\_check\_mark:|                    |
 |GRU                               |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|:white\_check\_mark:|
+|LLaMA-7B                          |[language/generative/llama](language/generative/llama)                        |                    |:white\_check\_mark:|
 |mobilebert-tflite                 |[language/nlp/mobilebert\_tflite](language/nlp/mobilebert_tflite)             |                    |:white\_check\_mark:|
 |ScoringIds                        |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
 |TransformerDecoder                |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
