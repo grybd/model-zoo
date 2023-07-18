@@ -219,6 +219,9 @@ python3 .github/workflows/check.py
 |GRU                               |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|:white\_check\_mark:|
 |LLaMA-7B                          |[language/generative/llama](language/generative/llama)                        |                    |:white\_check\_mark:|
 |mobilebert-tflite                 |[language/nlp/mobilebert\_tflite](language/nlp/mobilebert_tflite)             |                    |:white\_check\_mark:|
+|opus-mt-zh-en-decoder             |[language/translate/opus-mt-zh-en](language/asr/wenet)                        |                    |:white\_check\_mark:|
+|opus-mt-zh-en-encoder             |[language/translate/opus-mt-zh-en](language/asr/wenet)                        |                    |:white\_check\_mark:|
+|opus-mt-zh-en-init-decoder        |[language/translate/opus-mt-zh-en](language/asr/wenet)                        |                    |:white\_check\_mark:|
 |ScoringIds                        |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
 |TransformerDecoder                |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
 |TransformerLM                     |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |

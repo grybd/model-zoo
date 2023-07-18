@@ -123,3 +123,4 @@ vision/classification/ResNeXt50-v1
 vision/classification/ResNeXt50-v2
 language/generative/llama
 vision/segmentation/sam-vit-base
+language/translate/opus-mt-zh-en
