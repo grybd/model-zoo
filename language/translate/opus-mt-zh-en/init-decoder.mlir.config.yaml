@@ -1,0 +1,32 @@
+---
+
+name: opus-mt-zh-en-init-decoder
+
+gops: [66.472273497]
+
+shapes:
+  - [[1, 511], [1, 511], [1, 511, 512]]
+
+model: $(home)/opus-mt-zh-en-init-decoder.onnx
+
+precision: true
+
+mlir_transform:
+  model_transform.py
+    --model_name $(name)
+    --model_def $(model)
+    --input_shapes [$(shape_param)]
+    --mlir $(workdir)/transformed.mlir
+
+BM1684X:
+  deploy:
+    - model_deploy.py  --mlir $(workdir)/transformed.mlir
+        --quantize F32
+        --chip $(target)
+        --tolerance 0.99,0.99
+        --model $(workdir)/$(name)_bm1684x_f32.bmodel
+    - model_deploy.py  --mlir $(workdir)/transformed.mlir
+        --quantize F16
+        --chip $(target)
+        --tolerance 0.99,0.99
+        --model $(workdir)/$(name)_bm1684x_f16.bmodel
