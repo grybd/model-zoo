@@ -136,6 +136,7 @@ python3 .github/workflows/check.py
 |retinaface                       |[vision/detection/retinaface](vision/detection/retinaface)                                            |:white\_check\_mark:|:white\_check\_mark:|
 |S-DCNet_SHA_fusepost             |[vision/visual-counting/S-DCNet](vision/visual-counting/S-DCNet)                                      |                    |:white\_check\_mark:|
 |S-DCNet_SHB_fusepost             |[vision/visual-counting/S-DCNet](vision/visual-counting/S-DCNet)                                      |                    |:white\_check\_mark:|
+|sam-vit-base                     |[vision/segmentation/sam-vit-base](vision/segmentation/sam-vit-base)                                  |                    |:white\_check\_mark:|
 |scrfd                            |[vision/detection/scrfd](vision/detection/scrfd)                                                      |                    |:white\_check\_mark:|
 |SegFormer                        |[vision/segmentation/SegFormer](vision/segmentation/SegFormer)                                        |                    |:white\_check\_mark:|
 |shufflenet\_v2                   |[vision/classification/shufflenet\_v2](vision/classification/shufflenet_v2)                           |                    |:white\_check\_mark:|
@@ -204,7 +205,7 @@ python3 .github/workflows/check.py
 
 |Model                             |Path                                                                          |NNTC                |MLIR                |
 |:-                                |:-                                                                            |:-                  |:-                  |
-|bert                              |[language/nlp/bert](language/nlp/bert)                                        |:white\_check\_mark:|                    |
+|bert                              |[language/nlp/bert](language/nlp/bert)                                        |:white\_check\_mark:|:white\_check\_mark:|
 |bert\_base\_squad\_uncased-2.11.0 |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|                    |:white\_check\_mark:|
 |bert\_base\_squad\_uncased-4.23.0 |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|                    |:white\_check\_mark:|
 |bert\_base\_transformers-2.11.0   |[language/nlp/Huggingface_bert_squadv1](language/nlp/Huggingface_bert_squadv1)|:white\_check\_mark:|                    |
@@ -218,10 +219,13 @@ python3 .github/workflows/check.py
 |GRU                               |[language/nlp/GRU](language/nlp/GRU)                                          |:white\_check\_mark:|:white\_check\_mark:|
 |LLaMA-7B                          |[language/generative/llama](language/generative/llama)                        |                    |:white\_check\_mark:|
 |mobilebert-tflite                 |[language/nlp/mobilebert\_tflite](language/nlp/mobilebert_tflite)             |                    |:white\_check\_mark:|
+|opus-mt-zh-en-decoder             |[language/translate/opus-mt-zh-en](language/asr/wenet)                        |                    |:white\_check\_mark:|
+|opus-mt-zh-en-encoder             |[language/translate/opus-mt-zh-en](language/asr/wenet)                        |                    |:white\_check\_mark:|
+|opus-mt-zh-en-init-decoder        |[language/translate/opus-mt-zh-en](language/asr/wenet)                        |                    |:white\_check\_mark:|
 |ScoringIds                        |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
 |TransformerDecoder                |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
 |TransformerLM                     |[language/asr/conformer](language/asr/conformer)                              |:white\_check\_mark:|                    |
-|WenetDecoder                      |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|                    |
-|WenetEncoder                      |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|                    |
-|WenetSpeechDecoder                      |[language/asr/wenet](language/asr/wenet)                                |                    |:white\_check\_mark:|
-|WenetSpeechNonStreamingEncoder          |[language/asr/wenet](language/asr/wenet)                                |                    |:white\_check\_mark:|
+|WenetDecoder                      |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|:white\_check\_mark:|
+|WenetEncoder                      |[language/asr/wenet](language/asr/wenet)                                      |:white\_check\_mark:|:white\_check\_mark:|
+|WenetSpeechDecoder                |[language/asr/wenet](language/asr/wenet)                                      |                    |:white\_check\_mark:|
+|WenetSpeechNonStreamingEncoder    |[language/asr/wenet](language/asr/wenet)                                      |                    |:white\_check\_mark:|
